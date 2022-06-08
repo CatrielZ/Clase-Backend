@@ -14,7 +14,7 @@ app.get('/productos', async(req, res) => {
 app.get('/productoRandom', (req, res) => {
     let idRandom = Match.ceil(Math.random() * (3 - 1) + 1)
     console.log('IdRamdom', idRandom)
-    const products = await product.getById(idRandom)
+    const products =  product.getById(idRandom)
     console.log ("products", products)
     res.send(products.title)
 })
