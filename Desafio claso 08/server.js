@@ -11,10 +11,10 @@ app.use('/public', express.static(`${__dirname}/public`))
 
 app.use('/api/productos', rutas)
 
+/*app.use((error, req, res) => {
+    res.status(error.httpStatusCode).send(error)
+})*/
 
- //app.use((error, req, res) => {
-   //  res.status(error.httpStatusCode).send(error)
- //})
 
 app.listen(puerto, (err) => {
     if(err) {
