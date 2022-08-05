@@ -18,7 +18,7 @@ db.mensajes.insertOne({email:"anonimo2@gmail.com",createdAt:ISODate(),message:"H
 db.mensajes.insertOne({email:"anonimo1@gmail.com",createdAt:ISODate(),message:"Como estas te gusta el curso?"});
 db.mensajes.insertOne({email:"anonimo2@gmail.com",createdAt:ISODate(),message:"Esta muy bueno."});
 db.mensajes.insertOne({email:"anonimo1@gmail.com",createdAt:ISODate(),message:"Me alegro mucho"});
-db.mensajes.insertOne({email:"anonimo2@gmail.com",createdAt:ISODate(),message:"Quiero que saquen un curso de microservicios"});
+db.mensajes.insertOne({email:"anonimo2@gmail.com",createdAt:ISODate(),message:"Quiero poder a llegar a trabajar con todo esto"});
 db.mensajes.insertOne({email:"anonimo1@gmail.com",createdAt:ISODate(),message:"Esto estaria genial"});
 db.mensajes.insertOne({email:"anonimo2@gmail.com",createdAt:ISODate(),message:"Muy genial"});
 db.mensajes.insertOne({email:"anonimo1@gmail.com",createdAt:ISODate(),message:"Super genial"});
@@ -28,7 +28,7 @@ _Productos_
 ````
 db.productos.insertOne({title:"Arroz",price:120,thumbnail:"url"});
 db.productos.insertOne({title:"Papa",price:580,thumbnail:"url"});
-db.productos.insertOne({title:"Camote",price:900,thumbnail:"url"});
+db.productos.insertOne({title:"Morron",price:900,thumbnail:"url"});
 db.productos.insertOne({title:"Carne",price:1280,thumbnail:"url"});
 db.productos.insertOne({title:"Pescado",price:1700,thumbnail:"url"});
 db.productos.insertOne({title:"Zanahoria",price:2300,thumbnail:"url"});
@@ -91,7 +91,7 @@ db.createUser({
   pwd:"asd456",
   roles:[
     {
-        role:"read",db:"eccommerce"
+        role:"read",db:"ecommerce"
     }
   ]
 });
