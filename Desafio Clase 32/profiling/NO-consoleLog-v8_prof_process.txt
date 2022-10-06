@@ -1,0 +1,164 @@
+﻿Statistical profiling result from profiling/NO-consoleLog-v8.log, (4733 ticks, 0 unaccounted, 0 excluded).
+
+ [Shared libraries]:
+   ticks  total  nonlib   name
+   4385   92.6%          C:\WINDOWS\SYSTEM32\ntdll.dll
+    337    7.1%          C:\Program Files\nodejs\node.exe
+
+ [JavaScript]:
+   ticks  total  nonlib   name
+      2    0.0%   18.2%  Function: ^processTimers node:internal/timers:487:25
+      1    0.0%    9.1%  RegExp: (<%%|%%>|<%=|<%-|<%_|<%#|<%|%>|-%>|_%>)
+      1    0.0%    9.1%  LazyCompile: *resolve node:path:158:10
+      1    0.0%    9.1%  LazyCompile: *nextPart node:fs:2388:31
+      1    0.0%    9.1%  LazyCompile: *dirname node:path:653:10
+      1    0.0%    9.1%  Function: ^stringToFlags node:internal/fs/utils:555:23
+      1    0.0%    9.1%  Function: ^setStreamTimeout node:internal/stream_base_commons:237:26
+      1    0.0%    9.1%  Function: ^getcookie C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express-session\index.js:529:19
+      1    0.0%    9.1%  Function: ^end node:_http_outgoing:833:45
+      1    0.0%    9.1%  Function: ^<anonymous> node:internal/validators:236:42
+
+ [C++]:
+   ticks  total  nonlib   name
+
+ [Summary]:
+   ticks  total  nonlib   name
+     11    0.2%  100.0%  JavaScript
+      0    0.0%    0.0%  C++
+      8    0.2%   72.7%  GC
+   4722   99.8%          Shared libraries
+
+ [C++ entry points]:
+   ticks    cpp   total   name
+
+ [Bottom up (heavy) profile]:
+  Note: percentage shows a share of a particular caller in the total
+  amount of its parent calls.
+  Callers occupying less than 1.0% are not shown.
+
+   ticks parent  name
+   4385   92.6%  C:\WINDOWS\SYSTEM32\ntdll.dll
+
+    337    7.1%  C:\Program Files\nodejs\node.exe
+    197   58.5%    C:\Program Files\nodejs\node.exe
+     37   18.8%      Function: ^compileFunction node:vm:308:25
+     37  100.0%        Function: ^wrapSafe node:internal/modules/cjs/loader:1011:18
+     37  100.0%          Function: ^Module._compile node:internal/modules/cjs/loader:1051:37
+     37  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+     16    8.1%      Function: ^moduleStrategy node:internal/modules/esm/translators:110:56
+     16  100.0%        Function: ^moduleProvider node:internal/modules/esm/loader:279:28
+     16  100.0%          C:\Program Files\nodejs\node.exe
+     15    7.6%      Function: ^stat node:internal/modules/cjs/loader:151:14
+      9   60.0%        Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      9  100.0%          Function: ^Module._resolveFilename node:internal/modules/cjs/loader:848:35
+      9  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      6   40.0%        Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      6  100.0%          Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      6  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+     13    6.6%      Function: ^handleWriteReq node:internal/stream_base_commons:45:24
+     13  100.0%        Function: ^writeGeneric node:internal/stream_base_commons:147:22
+     10   76.9%          Function: ^Socket._writeGeneric node:net:769:42
+     10  100.0%            Function: ^Socket._write node:net:806:35
+      3   23.1%          LazyCompile: *_write node:internal/streams/writable:284:16
+      3  100.0%            Function: ^Writable.write node:internal/streams/writable:334:36
+     10    5.1%      Function: ^statSync node:fs:1530:18
+      9   90.0%        Function: ^tryStat C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\view.js:174:17
+      9  100.0%          Function: ^resolve C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\view.js:146:42
+      9  100.0%            Function: ^lookup C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\view.js:104:40
+      1   10.0%        LazyCompile: ~fileExists node:internal/modules/esm/resolve:259:20
+      1  100.0%          LazyCompile: ~legacyMainResolve node:internal/modules/esm/resolve:275:27
+      1  100.0%            LazyCompile: ~packageResolve node:internal/modules/esm/resolve:840:24
+      6    3.0%      Function: ^realpathSync node:fs:2412:22
+      5   83.3%        Function: ^toRealPath node:internal/modules/cjs/loader:393:20
+      5  100.0%          Function: ^tryFile node:internal/modules/cjs/loader:384:17
+      4   80.0%            Function: ^tryExtensions node:internal/modules/cjs/loader:400:23
+      1   20.0%            LazyCompile: ~tryPackage node:internal/modules/cjs/loader:338:20
+      1   16.7%        Function: ^finalizeResolution node:internal/modules/esm/resolve:367:28
+      1  100.0%          Function: ^moduleResolve node:internal/modules/esm/resolve:928:23
+      1  100.0%            Function: ^defaultResolve node:internal/modules/esm/resolve:1002:24
+      5    2.5%      Function: ^cpus node:os:133:14
+      5  100.0%        Function: ^<anonymous> file:///C:/Users/Ramiro%20Porta/Desktop/proyectos/Backend-Coderhouse/Clases/Clase32/desafio/src/routes/infoProcessRouter.js:7:32
+      5  100.0%          Function: ^handle C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\layer.js:86:49
+      5  100.0%            Function: ^next C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\route.js:116:16
+      4    2.0%      LazyCompile: ~configSecureContext node:internal/tls/secure-context:120:29
+      4  100.0%        LazyCompile: ~createSecureContext node:_tls_common:99:29
+      4  100.0%          LazyCompile: ~connect node:_tls_wrap:1597:35
+      4  100.0%            LazyCompile: ~makeConnection C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\mongodb\lib\cmap\connect.js:248:24
+      4    2.0%      Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   50.0%        Function: ^nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   50.0%          Function: ~<anonymous> node:internal/cluster/primary:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   50.0%          Function: ~<anonymous> node:crypto:1:1
+      1  100.0%            Function: ^compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2   50.0%        Function: ^compileForPublicLoader node:internal/bootstrap/loaders:246:25
+      2  100.0%          Function: ^loadNativeModule node:internal/modules/cjs/helpers:44:26
+      2  100.0%            Function: ^Module._load node:internal/modules/cjs/loader:757:24
+      3    1.5%      Function: ^openSync node:fs:576:18
+      3  100.0%        Function: ^readFileSync node:fs:450:22
+      2   66.7%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      1   33.3%          Function: ^fileLoader C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:292:20
+      1  100.0%            Function: ^handleCache C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:210:21
+      3    1.5%      Function: ^measureRoundTripTime C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\mongodb\lib\sdam\monitor.js:287:30
+      3  100.0%        Function: ^<anonymous> C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\mongodb\lib\sdam\monitor.js:303:58
+      3  100.0%          Function: ^listOnTimeout node:internal/timers:507:25
+      3  100.0%            Function: ^processTimers node:internal/timers:487:25
+      3    1.5%      Function: ^compression C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\compression\index.js:59:31
+      3  100.0%        Function: ^handle C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\layer.js:86:49
+      3  100.0%          Function: ^next C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\route.js:116:16
+      3  100.0%            Function: ^dispatch C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\route.js:98:45
+      3    1.5%      C:\Program Files\nodejs\node.exe
+      2   66.7%        LazyCompile: *scanLine C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:815:22
+      2  100.0%          LazyCompile: *<anonymous> C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:742:32
+      2  100.0%            C:\Program Files\nodejs\node.exe
+      1   33.3%        Function: ^format C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\content-type\index.js:65:17
+      1  100.0%          Function: ^setCharset C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\utils.js:248:41
+      1  100.0%            Function: ^send C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\response.js:111:25
+      2    1.0%      LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2  100.0%        LazyCompile: ~nativeModuleRequire node:internal/bootstrap/loaders:332:29
+      1   50.0%          Function: ~<anonymous> node:internal/webstreams/readablestream:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      1   50.0%          Function: ~<anonymous> node:internal/modules/esm/resolve:1:1
+      1  100.0%            LazyCompile: ~compileForInternalLoader node:internal/bootstrap/loaders:299:27
+      2    1.0%      Function: ^tryStatSync node:fs:404:21
+      2  100.0%        Function: ^readFileSync node:fs:450:22
+      1   50.0%          LazyCompile: ~Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            LazyCompile: ~Module.load node:internal/modules/cjs/loader:963:33
+      1   50.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      2    1.0%      Function: ^slice node:buffer:594:12
+      2  100.0%        Function: ^toString node:buffer:783:46
+      2  100.0%          Function: ^readFileSync node:fs:450:22
+      1   50.0%            LazyCompile: ~Module._extensions..json node:internal/modules/cjs/loader:1156:39
+      1   50.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2    1.0%      Function: ^read node:internal/modules/package_json_reader:16:14
+      2  100.0%        Function: ^readPackage node:internal/modules/cjs/loader:290:21
+      1   50.0%          Function: ^resolveExports node:internal/modules/cjs/loader:472:24
+      1  100.0%            Function: ^Module._findPath node:internal/modules/cjs/loader:494:28
+      1   50.0%          Function: ^readPackageScope node:internal/modules/cjs/loader:321:26
+      1  100.0%            Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      2    1.0%      Function: ^randomFillSync node:internal/crypto/random:111:24
+      2  100.0%        Function: ^randomBytes node:internal/crypto/random:91:21
+      2  100.0%          Function: ^randomBytesSync C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\random-bytes\index.js:72:25
+      2  100.0%            Function: ^uidSync C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\uid-safe\index.js:75:18
+      2    1.0%      Function: ^listOnTimeout node:internal/timers:507:25
+      2  100.0%        Function: ^processTimers node:internal/timers:487:25
+      2    1.0%      Function: ^initialize C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\passport\lib\middleware\initialize.js:51:29
+      1   50.0%        LazyCompile: *trim_prefix C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\index.js:293:23
+      1  100.0%          LazyCompile: *next C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\index.js:177:16
+      1  100.0%            Function: ^session C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express-session\index.js:179:26
+      1   50.0%        Function: ^handle C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\layer.js:86:49
+      1  100.0%          Function: ^trim_prefix C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\index.js:293:23
+      1  100.0%            Function: ^<anonymous> C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\express\lib\router\index.js:280:64
+      2    1.0%      Function: ^closeSync node:fs:526:19
+      2  100.0%        Function: ^readFileSync node:fs:450:22
+      1   50.0%          Function: ^fileLoader C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:292:20
+      1  100.0%            Function: ^handleCache C:\Users\Catriel Labat\Desktop\proyectos\Backend-Coderhouse\Clases\Clase32\desafio\node_modules\ejs\lib\ejs.js:210:21
+      1   50.0%          Function: ^Module._extensions..js node:internal/modules/cjs/loader:1106:37
+      1  100.0%            Function: ^Module.load node:internal/modules/cjs/loader:963:33
+      5    1.5%    Function: ^processTimers node:internal/timers:487:25
+      5    1.5%    Function: ^emitBeforeScript node:internal/async_hooks:510:26
+      4   80.0%      Function: ^listOnTimeout node:internal/timers:507:25
+      4  100.0%        Function: ^processTimers node:internal/timers:487:25
+      1   20.0%      LazyCompile: ~listOnTimeout node:internal/timers:507:25
+      1  100.0%        LazyCompile: ~processTimers node:internal/timers:487:25
